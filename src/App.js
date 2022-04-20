@@ -20,6 +20,7 @@ export default function App() {
       <button onClick={() => setOpen(true)}>Open Modal</button>
       <Modal show={open} setShow={setOpen} />
       <Backdrop show={open} />
+      <div>Main Branch (updated via local copy)</div>
     </div>
   );
 
