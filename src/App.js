@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import Modal from "./Modal";
-import Backdrop from "./Backdrop";
+import Modal from './Modal';
+import Backdrop from './Backdrop';
 
-import "./styles.css";
+import './styles.css';
 
 // ==============================================
 
@@ -15,11 +15,12 @@ export default function App() {
   // --------------------------------------------
 
   return (
-    <div className="App">
-      <p>Modal: {open ? "opened" : "closed"}</p>
+    <div className='App'>
+      <p>Modal: {open ? 'opened' : 'closed'}</p>
       <button onClick={() => setOpen(true)}>Open Modal</button>
       <Modal show={open} setShow={setOpen} />
       <Backdrop show={open} />
+      <div>MAIN</div>
     </div>
   );
 
